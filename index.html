@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
+    <header>
     <nav id="desktop-nav">
       <div class="logo">Karn Prajapati</div>
       <div>
@@ -21,6 +22,7 @@
         </ul>
       </div>
     </nav>
+  </header>
     <nav id="hamburger-nav">
       <div class="logo">Karn Prajapati</div>
       <div class="hamburger-menu">
@@ -106,12 +108,7 @@
           </div>
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+              Welcome to my portfolio! I am Karn Prajapati , a dedicated Computer Science student at George Brown College. With a passion for coding and innovation, I have honed my skills in programming, software development, and data analysis. My journey at George Brown has been transformative, allowing me to collaborate on diverse projects and push the boundaries of technology. Explore my work and connect with me to discuss potential collaborations or opportunities in the field of Computer Science. Let's shape the future of tech together!
             </p>
           </div>
         </div>
@@ -348,21 +345,26 @@
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <div class="contact-form">
+            <form
+  action="https://formspree.io/f/mvgpoqge"
+  method="POST"
+>
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
+              </div>
+              <div class="form-group">
+                  <button type="submit">Send</button>
+              </div>
+          </form>
+          </div>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-        </div>
+        
       </div>
     </section>
     <footer>
